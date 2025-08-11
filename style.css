@@ -1,132 +1,53 @@
-body {
-  font-family: "Poppins", sans-serif;
-  margin: 50px 50px 0 50px;
-  background-color: #faf9f6;
-  display: flex;
-  flex-direction: column;
-  min-height: 95vh;
-}
-.main {
-  flex: 1;
-  width: 80%; /* Or any specific width */
-  margin: 0 auto; /* Top/bottom margin 0, left/right auto */
+.language{
+    float: right;
+    margin: 5px;
 }
 
-h1 {
-  font-size: 5rem;
-  border: 4px dotted blue;
+.top-menu{
+    text-align: center;
+  margin: 0 auto;
 
 }
 
-footer {
-  text-align: right;
-  color: midnightblue;
-  float: right;
-}
 
-.creative-title{
-  color: blue;
-  
+p{
+max-width: 80%;
+text-align: justify;
+/*display: inline-block;*/
+margin: 20px;
 }
 
 
-.tile-image{
-  float: left;
+.project-image{
   height: 200px;
-  margin-right: 50px;
-}
-
-
-
-h2{
-  display: inline-block;
-  margin: 20px;
-
-
+  float: left;
+  margin: 50px;
 }
 
 .card{
-    width: 45%;
+display: inline-block;
+margin: 20px;
+border: 4px dotted blue;
+
 
 }
 
-.left.card{
-  float: left;
-   border: 4px dotted blue;
 
-}
-.right.card{
-  float: right;
-  border: 4px dotted blue;
+.zoom {
+  transition: transform .2s;
+  margin: 0 auto;
 }
 
-/*small screen*/
-@media (max-width: 634px){
-  body{
-    justify-content: center;
-    background-color: lightsalmon;
-
-  .logo{
-  display:block;
-  width: 100px;
-
-  }
-
-    .main {
-
-      border: 4px dotted yellow;
-
-    }
-    h1{
-        font-size: 2rem;
-        display: flex;
-        text-align: center;
-    }
-
- 
-    .card{
-  
-      display: block;
-      width: 100%; 
-     margin-bottom: 30px;
-    text-align: justify;
-    }
-
-
-
-     .card img { 
-      width: 90%; 
-      margin-bottom: 10px;
-      display: inline;
-      object-fit: cover;
-    }
-
-
-
-  }
-
+.zoom:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.2); 
 }
 
-/*computer screen*/
-@media (min-width: 635px){
-  body{
-      background-color: seagreen;
-    img { 
-      max-width: 60%; 
+.left{
+  /*float: left;*/
 
-    p{
-    max-width: 30%;
-    text-align: justify;
-    display: inline-block;
-    margin: 20px;
-    }
-    
-.logo{
-  display:block;
-  width: 200px;
-  
 }
-    
-    }
-  }
+.right{
+  /*float: right;*/
 }

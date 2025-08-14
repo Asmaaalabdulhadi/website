@@ -4,8 +4,18 @@
 }
 
 .top-menu{
-    text-align: center;
-  margin: 0 auto;
+  text-align: center;
+  /*margin: 0 auto;*/
+
+}
+
+.menu-container{
+  display: flex;
+  gap: 3rem;
+  padding: 10px;
+  background-color: aliceblue;
+  font-size: 1.5rem;
+  justify-content: center;
 
 }
 
@@ -50,4 +60,9 @@ border: 4px dotted blue;
 }
 .right{
   /*float: right;*/
+}
+
+footer{
+  float: right;
+  width: 350px;
 }

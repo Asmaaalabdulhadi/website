@@ -12,21 +12,25 @@
 .menu-container{
   display: flex;
   gap: 3rem;
-  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   background-color: aliceblue;
   font-size: 1.5rem;
   justify-content: center;
+  
 
 }
 
 .main-container{
   display: flex;
-  padding: 100px;
-  flex-direction: row;
+  padding: 40px;
+  /*flex-direction: row;*/  
+  align-items: center;
   justify-content: center;
-  align-items: flex-start;
-  max-width: 900px;
-    flex-wrap: wrap;
+  
+/*  max-width: 900px;*/
+  flex-wrap: wrap;
+
 
 }
 
@@ -70,9 +74,9 @@
 }
 
 .card{
-  
-border: 4px dotted blue;
+/*border: 4px dotted blue;
   grid-column: 1 / span 2;
+  width: 50%;*/  
 
 }
 
@@ -129,4 +133,28 @@ li{
 footer{
   float: right;
   width: 350px;
+}
+
+@media (max-width: 680px) {
+
+  .landing-page-container{
+    display: flex;
+    flex-direction: column;
+  }
+  .menu-container{
+    gap: 1rem;
+    font-size:25px ;
+    justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 380px) {
+    .menu-container{
+      font-size: 16px;
+      justify-content: center;
+    }
+
+    .card{
+      min-width:300px;
+    }
 }
